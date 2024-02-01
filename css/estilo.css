@@ -1,0 +1,324 @@
+/*poner fuente*/
+*{
+  box-sizing: border-box;
+}
+body {
+background-color:rgb(0, 0, 0);
+margin: 50px;
+}
+                      /*---------------estilos base----------------*/
+img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+} 
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  color: rgb(6, 203, 55);
+}   
+.container{
+  width: 100%;
+  margin: auto;
+}  
+.container--flex{
+  display: flex; /* recomen, basta solo con el display flex*/
+  flex-wrap: wrap; /* los elementos que no entran ban acia bajo*/
+  justify-content:space-between ;
+  align-items: center;
+}    
+.column{
+  width: 100%;
+}           
+                      /*---------------estilos main header----------------*/
+.main-header {
+  width: 100%;
+}
+#imagenlogo{
+  padding: 20px;
+  margin: 20px;
+  
+}
+.main-header__contactInfo__phone{
+  background: #DE423A;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+.main-header__contactInfo__address{
+  padding: 10px; 
+  color: white;
+  background: #DE423A;
+  
+}
+.main-header [class*="icon-"] {
+  position: relative;
+  top: 2px;
+  right: 5;
+}
+                        /*---------------estilos main menu----------------*/
+  .main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 4px;
+    background: #DE423A;
+  }      
+  .icon-menu{
+   display: block; /*---------------icono menu----------------*/
+   color: black;
+   border: 1px solid black;
+   border-radius:3px;
+   width: 40px;
+   height: 40px;
+   line-height: 45px;
+   text-align: center;
+   cursor: pointer;
+   font-size: 1.5em;
+  }   
+  .social-icon{
+    display: flex;
+    justify-content:space-between; 
+  } 
+  .social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius:50%;
+    
+  }
+  .social-icon__link {
+    text-decoration: none;
+  }
+  .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+  }
+  .menu__link {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  .menu__link:hover {
+    background: #DE423A; 
+  }
+  .menu__link--select {
+   background:#f8f80d7b; 
+  }
+  .mostrar{
+    height:196px;
+  }
+                 /*--------------- banner ----------------*/
+.banner {
+  position: relative;
+}
+.banner__img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+  
+         /*--------------estilos principales----------------*/
+.group--color .container {
+  background: #DE423A;
+  color: white; 
+  padding: 10px;
+  text-align: center;
+}
+.column__txt {
+  color: white;
+}
+.main__title{
+  margin: 15px;
+  font-size: 2em;  /*-------tamaño de fuente----------------*/
+  font-family: 'pacifico', cursive;
+  color: white; 
+}
+.column__title{
+  font-size: 1.3em;
+}
+.main__about__description .column:nth-child(2) {
+  padding: 10px;
+ }
+  .btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background:#DE423A;
+    color: black;
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .group__title{
+    font-family: 'pacifico', cursive;
+    text-align: center;
+    font-size: 1.8em;
+   margin: 30px; 
+  }
+
+                                    /*-------section especial del mes----------------*/
+.today-special .column{
+  margin-bottom:30px;
+  text-align: center;
+}
+.today-special__img{
+  margin: auto; /*------- dejar imagenes en el centro y del mismo tamañ----------------*/
+  max-width: 350px;
+}
+.today-special__title{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.today-special__price{
+font-size: 1.5em;
+color: #DE423A;
+font-weight: bold;
+}
+                                          /*----------------footer----------------*/
+.main-footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: .8em;
+}
+
+.copy {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+
+}
+.main-footer [class*="icon-"] {
+  color: white;
+  text-decoration: none;
+}
+.main-footer [class*="icon-"]::before {
+position: relative;
+top: 5px;
+right: 5px;
+}
+ /*----------------Estilos responsive----------------*/
+
+@media screen and (min-width:480px) {
+
+}
+
+
+.banner{
+  margin: -200;
+  z-index: -1000;
+}
+.main-footer .container--flex {
+  align-items: flex-start;
+}
+.column--50 {
+width:  49%;
+
+}
+.column--50-25{
+width: 49%;
+}
+.column--33 {
+width: 32%;
+}
+.main__about__description .column:nth-child(2) {
+  padding-left: 20px;  
+}
+
+.main__about__description .btn {
+  margin: 0;
+}
+.today-special .column {
+  border: 5px  solid #ddd;
+  padding: 5px;
+}
+.today-special__img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.main {
+  padding-bottom: 15px;
+}
+
+/*----------------Estilos responsive----------------*/
+@media screen and (min-width:768px) {
+.main__title {
+  font-size:2.2em;
+ }
+ .main__about__description {
+  margin-top: 30px;
+ }
+  .main__about__description .column--50:nth-child(2) {
+    font-size: 1em;
+  }
+  .main__about__description .column--50:nth-child(2) .column__txt {
+    line-height: 30px;
+  }
+  .column--50-25 {
+    width: 24.5%;
+  }
+  .column__title {
+    font-size: 1em;
+  }
+  .group__title {
+    font-size: 2.2em;
+  }
+ }
+   /*----------------Estilos responsive----------------*/
+
+ @media screen and (min-width:1024px){
+  .container {
+    width: 1000px;
+  }
+}
+.group--color .container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.today-special__title {
+  font-size: 1.4em;
+}
+.today-special__price {
+  font-size: 1.8em;
+}
+ .main-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
+
+ @media screen and (min-width:1600px) {
+  .container {
+    width: 1400px;
+  }
+  .main__about__description .column:nth-child(1) img {
+    width: 100%;
+    height: 350%;
+    object-fit: cover;
+  }
+  .today-special__img {
+    height: 300px;
+
+  }
+ }
+/*---------------PAGINA NOSOSTROS BANNER ----------------*/
